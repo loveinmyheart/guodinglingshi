@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/single_second_iv"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:padding="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/single_second_content"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="刺猬阿甘.." />
+
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="专属价："
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/shop_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/shop"
+            android:text="RMB"
+            android:textColor="@color/colorMult" />
+
+        <TextView
+            android:id="@+id/single_second_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shop_rmb"
+            android:text="29.80"
+            android:textColor="@color/colorMult"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shop"
+            android:layout_alignParentLeft="true"
+            android:text="在售价："
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/market_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shop"
+            android:layout_toRightOf="@+id/market"
+            android:text="RMB"
+            android:textColor="@color/colorMult"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/single_second_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/shop"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/market_rmb"
+            android:text="11.90"
+            android:textColor="@color/colorMult"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="￥"
+            android:layout_toLeftOf="@+id/preferential"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorMult"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/preferential"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="20"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorMult"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/preferential"
+            android:src="@drawable/discount_coupons" />
+    </RelativeLayout>
+</LinearLayout>
