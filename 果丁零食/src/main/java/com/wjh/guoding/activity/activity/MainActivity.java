@@ -17,7 +17,7 @@ import com.wjh.guoding.activity.fragment.SingleFragment;
 import com.wjh.guoding.activity.fragment.SpecialFragment;
 
 public class MainActivity extends AppCompatActivity {
-
+//123456
     String titles[]={
             "专题",
             "优品",
